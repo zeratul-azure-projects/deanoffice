@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using DeanOffice.Models;
 
 namespace DeanOffice.Data
 {
@@ -12,5 +13,6 @@ namespace DeanOffice.Data
             : base(options)
         {
         }
+        public DbSet<DeanOffice.Models.Student> Student { get; set; }
     }
 }
